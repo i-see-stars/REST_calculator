@@ -9,9 +9,10 @@
 - `app` — директория с кодом приложения.
 - `code` — рабочая директория докер-контейнера.
 
+
 ## Запуск приложения
 
 - Переходим в рабочую директорию проекта.
 - Запускаем docker.
-- Выполняем команду `docker build -t myimage .`
-- Выполняем команду `docker run -d --name mycontainer -p 80:80 myimage`
+- Собираем изображение `docker build -t myimage .`
+- Запускаем контейнер `docker run -d --name mycontainer -p 80:80 myimage`
